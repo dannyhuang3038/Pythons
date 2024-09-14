@@ -6,7 +6,7 @@ def fib_gen():
         a= b
         b = c + a
         yield c
-
+print('Let start')
 f=fib_gen()
 for i in range(20):
     print(next(f),end=' ')
