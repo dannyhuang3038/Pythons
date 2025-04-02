@@ -28,7 +28,7 @@ if response.status_code == 200:
         # 电影标题（包含中文名和原名）
         title = movie.find("span", class_="title").text
         
-        # 评分
+        # Movie 评分
         rating = movie.find("span", class_="rating_num").text
         
         # 电影详情页链接
@@ -46,3 +46,4 @@ if response.status_code == 200:
     print("数据已保存到 douban_top250.csv")
 else:
     print("请求失败，状态码:", response.status_code)
+# the end    
